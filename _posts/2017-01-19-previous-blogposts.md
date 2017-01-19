@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Previous blog posts"
+title: "Previous Blog Posts"
 date: 2017-01-19
 ---
 
