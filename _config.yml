@@ -1,3 +1,5 @@
 name: fenceposterror - just slightly off
 markdown: kramdown
 theme: jekyll-theme-leap-day
+gems:
+  - jekyll-sitemap
