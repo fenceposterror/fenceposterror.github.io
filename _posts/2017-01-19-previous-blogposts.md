@@ -12,4 +12,4 @@ This will be the new place for me to put down my thoughts on (probably mainly) s
 - [Inglorious Headers](https://www.scip.ch/en/?labs.20160121) ([read it in German](https://www.scip.ch/?labs.20160121))
 - [Big Brother or How I Stopped Worrying and Love Encryption](https://www.scip.ch/en/?labs.20151217) ([read it in German](https://www.scip.ch/?labs.20151217))
 - [Metadata Revisited](https://www.scip.ch/en/?labs.20150820) ([read it in German](https://www.scip.ch/?labs.20150820))
-- [XSS Is Still My Name - A Call for Greater Appreciation of Developers](https://www.scip.ch/en/?labs.20161110) ([read it in German](https://www.scip.ch/?labs.20161110))
+- [XSS is Still My Name - A Call for Greater Appreciation of Developers](https://www.scip.ch/en/?labs.20161110) ([read it in German](https://www.scip.ch/?labs.20161110))
