@@ -47,7 +47,7 @@
   }
 
   @include media-query($on-palm) {
-    position: absolute;
+    position: relative;
     top: 9px;
     right: $spacing-unit / 2;
     background-color: $background-color;
@@ -70,7 +70,7 @@
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 100px;
+      padding-top: 10px;
       text-align: center;
 
       > svg path {
