@@ -3,8 +3,9 @@ layout: post
 title: "Previous Blog Posts"
 date: 2017-01-19
 ---
-
 The following posts I wrote during my time at scip AG.
+
+![archive]({{ site.url }}/assets/archive01.png)
 
 ### Research Related
 
