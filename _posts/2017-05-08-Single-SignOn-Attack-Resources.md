@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Single Sign-On Attack Resources"
-date: 2017-05-03
+date: 2017-05-08
 ---
 Attacks on SSO protocols are an active field of research and finding good sources can be a bit of a nuisance. I recently invested time into research, resulting in the following collection of links, papers and tools. The list has been curated and filtered to only show links I consider to be noteworthy or particularly helpful. It is not and not intended to be comprehensive.
 
