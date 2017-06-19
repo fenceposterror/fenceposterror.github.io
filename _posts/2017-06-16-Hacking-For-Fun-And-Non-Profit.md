@@ -4,7 +4,7 @@ title: "Hacking Open Source Software for Fun and Non-Profit"
 date: 2017-06-16
 ---
  
-«Hacking Open Source Software for Fun and Non-Profit» is the title of [blog post](http://haxx.ml/post/137946990286/hacking-open-source-software-for-fun-and) by fellow security researcher [@addelindh](https://twitter.com/addelindh). Testing Open Source Software (OSS) is something that has been on my to-do list for a while, because I am convinced that a certain amount of time should be dedicated to it. The reason for this is simple: I firmly believe in giving back to a community that I rely on a daily basis. This blog post is about an ongoing audit of the [Ampache](http://ampache.org) media streaming server, the vulnerabilities found and lessons learned. 
+«Hacking Open Source Software for Fun and Non-Profit» is the title of [blog post](http://haxx.ml/post/137946990286/hacking-open-source-software-for-fun-and) by fellow security researcher [@addelindh](https://twitter.com/addelindh). Testing Open Source Software (OSS) is something that has been on my to-do list for a while, because I am convinced that a certain amount of time should be dedicated to it. The reason for this is simple: I firmly believe in giving back to a community that I rely on on a daily basis. This blog post is about an ongoing audit of the [Ampache](http://ampache.org) media streaming server, the vulnerabilities found and lessons learned. 
 
 ![archive]({{ site.url }}/assets/sqli01.png)
 
@@ -46,7 +46,7 @@ I went back to check what went wrong and learned something else interesting. The
 142        }
 ```
  
-If I had looked once, I had noticed that things got quoted and therefore should have been fine, skipping the nuisance for the developers. The interesting part is on the second look in line 141. `substr` can break a properly quoted string. While in this case it doesn’t, it is quite nice that RIPS knows - it is worth not just assuming that the method is safe. RIPS also offers configuration options where one can set not automatically discovered validators and sanitizers. 
+If I had looked once, I would have noticed that things got quoted and therefore should have been fine, skipping the nuisance for the developers. The interesting part is on the second look in line 141. `substr` can break a properly quoted string. While in this case it doesn’t, it is quite nice that RIPS knows - it is worth not just assuming that the method is safe. RIPS also offers configuration options where one can set not automatically discovered validators and sanitizers. 
  
 ### Find Vulnerabilities in Non-Active Code
  
@@ -60,7 +60,7 @@ This code is never reached, if the default setting of `track_user_ip` is not cha
  
 ### Logic Errors Are Difficult to Find with Static Code Analysis
  
-During the quick manual checks in the beginning, I noticed the app is missing a CSRF token for changing passwords and it also doesn’t ask for the old password. Since I hadn’t worked much with static code analyzers before, their shortcomings were not obvious to me. However, finding them is impossible with this sort of approach due to the fact that they’re logical application errors. Just as side note, when I wanted to report the change password issues, I noticed, that it had already been reported as [issue 539](https://github.com/ampache/ampache/issues/539), but this hasn’t been addressed yet.
+During the quick manual checks in the beginning, I noticed the app is missing a CSRF token for changing passwords and it also doesn’t ask for the old password. Since I hadn’t worked much with static code analyzers before, their shortcomings were not obvious to me. However, finding them is impossible with this sort of approach due to the fact that they’re logical application errors. Just as a side note, when I wanted to report the change password issues, I noticed, that it had already been reported as [issue 539](https://github.com/ampache/ampache/issues/539), but this hasn’t been addressed yet.
  
 ### Same PHP Object Instantiation but Different
  
@@ -111,7 +111,7 @@ RIPS also found various authenticated reflected XSS (issues [1533](https://githu
  
 ### Organizational Issues
  
-Regarding the organizational aspects of auditing OSS, how do you report a vulnerability to an open source project, that doesn’t have a dedicated e-mail address set up? In this case I asked in the mailing list beforehand and they said to just file an issue. It would be really nice to be able to report an issue as “private” so only the reporter and the admins can see the issue. This would be a great feature for Github to implement. 
+Regarding the organizational aspects of auditing OSS, how do you report a vulnerability to an open source project that doesn’t have a dedicated e-mail address set up? In this case I asked in the mailing list beforehand and they said to just file an issue. It would be really nice to be able to report an issue as “private” so only the reporter and the admins can see the issue. This would be a great feature for Github to implement. 
  
 ## Conclusion
  
@@ -121,8 +121,8 @@ Mapping a detected vulnerability in the browser to the code, if you are not very
  
 It is worth pointing out, that OSS is hard. This project is done completely by volunteers without doing this on their job time. Some of the vulnerabilities were closed quickly. Others are still open. I also have not reported everything yet, giving the developers a chance to close one by one without sending them too many reports at once. It seems like they’ll soon release a last version including the patches and then try to port the project to the Laravel framework. 
  
-Thanks to RIPStech who let me play with their code analysis solution to contribute to open source! It is easy to use and has a comfortable GUI, that lets you explore the code very comfortably. It is noticeable, that the solution was developed by people who use it themselves - providing features tailored to bug hunters. Last but not least an appeal to security researchers, pentesters, white hats or whatever you call yourselves: If you have some spare time, consider hacking open source software. Let’s do our part and contribute.
+Thanks to RIPStech who let me play with their code analysis solution to contribute to open source! It is easy to use and has a comfortable GUI, that lets you explore the code very comfortably. It is noticeable that the solution was developed by people who use it themselves - providing features tailored to bug hunters. Last but not least an appeal to security researchers, pentesters, white hats or whatever you call yourselves: If you have some spare time, consider hacking open source software. Let’s do our part and contribute.
 
-## Addendum
+## Addendum 17/6/19
 
 Since I was told, that some of my points could create confusion to whether RIPS didn't perform properly -  let me clarify: RIPS did an outstanding job finding a total of 165 vulnerabilities and other security issues in 3m26s in 109039 lines of code spread over 531 files. That is after configuring it, so without false positives. Some vulnerabilities have up to seven levels from source to sink. I'm impressed and I thought it was clear, that I'd recommend it to hunt for bugs in PHP.
