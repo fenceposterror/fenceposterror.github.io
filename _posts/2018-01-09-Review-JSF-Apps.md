@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Review JSF Apps"
+date: 2018-01-09
+---
+
 Who doesn’t like XSS delivered for free by the underlying framework? How to spot this with a code review and also how to avoid the Java Server Faces ViewState blocking your testing is part of the article. While this is probably not new and definitely isn’t complete, I decided nonetheless to put some of this information together in one place anyway.
 
 ## ViewState - Server vs. Client
