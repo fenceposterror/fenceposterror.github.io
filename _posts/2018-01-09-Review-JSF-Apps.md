@@ -20,15 +20,15 @@ The `ViewState` can be a pain in the ass, when you want to use Burp's Repeater, 
 
 First, create a new `Macro` under `Project options` -> `Sessions` -> `Macros` by selecting a request that returns the `ViewState` of the page you are manipulating. `Configure item`, you can add a custom parameter location. Add `javax.faces.ViewState`.
 
-![Extract ViewState](./assets/macro_extract_viewstate.png)
+![Extract ViewState](/assets/macro_extract_viewstate.png)
 
 Second, add this Macro to the `Session Handling Rules` below `Use cookies from Burp's cookie jar`. Give it a meaningful name, chose `run macro` as action and select your previously created macro. It is worth making sure, that everything you want to be in scope is in scope, and not much else is messed with. 
 
-![Configuring Scope](./assets/session_handling_scope.png)
+![Configuring Scope](/assets/session_handling_scope.png)
 
 Basically that is it. In case you need to do some trouble shooting, or want to validate it worked, use the `session tracer`. It should look roughly like this:
 
-![Seeing that it got applied](./assets/session_handling_after_application.png)
+![Seeing that it got applied](/assets/session_handling_after_application.png)
 
 ## Easy XSS
 
