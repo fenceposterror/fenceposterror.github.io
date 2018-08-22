@@ -20,6 +20,7 @@ Attacks on SSO protocols are an active field of research and finding good source
 
 ##### SAML
 
+- Paper: [Security Analysis of eIDAS - The Cross-Country Authentication Scheme in Europe](https://www.usenix.org/system/files/conference/woot18/woot18-paper-engelbertz.pdf)
 - Paper: [On Breaking SAML: Be Whoever You Want to Be](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf)
 - Blog post: [Attacking SSO: Common SAML Vulnerabilities and Ways to Find Them](https://blog.netspi.com/attacking-sso-common-saml-vulnerabilities-ways-find/)
 - Dissertation by [Juraj Somorovsky](https://www.nds.rub.de/media/nds/veroeffentlichungen/2013/11/19/diss_somorovsky.pdf) 
