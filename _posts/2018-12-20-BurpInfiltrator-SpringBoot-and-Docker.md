@@ -4,7 +4,7 @@ title: "Burp Infiltrator, Spring Boot and Docker"
 date: 2018-12-20
 ---
 
-The other day, I set up Burp Infiltrator. During its setup, I ran into an issue or two, hence this blog post. So you don't have to ran into the same ones. But before we dive in, let's have a look at what Burp Infiltrator actually is.
+The other day, I set up Burp Infiltrator. During its setup, I ran into an issue or two, hence this blog post. So you don't have to run into the same ones. But before we dive in, let's have a look at what Burp Infiltrator actually is.
 
 The [Burp Infiltrator](https://portswigger.net/burp/documentation/infiltrator) is part of Burp Suite. It allows instruction of the applications, so that that during a pentest, you can detect if the input landed in potentially unsafe API calls. Massively simplified - that's it. And it’s awesome!
 
@@ -41,7 +41,7 @@ Some background info on this:
 - My umask by default doesn’t include execution rights, thus the `chmod`
 
 ## Docker
-The official infiltrator documentation states:
+The official Infiltrator documentation states:
 
 > If the bytecode is already located on the target application server, ensure that the application is not currently running, as this may prevent the bytecode on disk from being modified.
 
