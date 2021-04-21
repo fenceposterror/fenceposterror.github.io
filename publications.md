@@ -4,6 +4,13 @@ title: Publications and Talks
 permalink: /publications/
 ---
 
+### Cloud Security
+
+* [Zusammenarbeit wie auf Wolke 7](https://www.computerworld.ch/software/firmenbeitraege/zusammenarbeit-wolke-7-2642999.html) (de) in Computerworld (March 2021)
+
+### Swiss Testing Night
+
+* Introduction to Security Testing at [Swiss Testing Night](https://swisstestingday.ch) (November 2018)
 
 ### The Tale of a Fameless but Widespread Vulnerability
 
