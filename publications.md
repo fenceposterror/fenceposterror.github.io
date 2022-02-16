@@ -7,6 +7,7 @@ permalink: /publications/
 ### Cloud Security
 
 * [Zusammenarbeit wie auf Wolke 7](https://www.computerworld.ch/software/firmenbeitraege/zusammenarbeit-wolke-7-2642999.html) (de) in Computerworld (March 2021)
+* [Cloud Security Risks: Practical Lessons From Developing Securely in the Cloud](https://www.youtube.com/watch?v=6ULQy9T10W4) at [CRITIS 21](https://critis2021.org/conference-program/)
 
 ### Swiss Testing Night
 
